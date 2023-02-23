@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-BackSurveyApplication<back-survey>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.backend.backsurvey.BackSurveyApplication",
+      "projectName": "back-survey",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
