@@ -33,7 +33,7 @@ Su base de datos es MySql.
 
 ### 3. FrontEnd
 
-  Para el Frontend debemos ejecutar el comando 'npm install' para poder instalar las dependencias del proyecto.
+  Para el Frontend debemos ejecutar el comando 'npm install --force' para poder instalar las dependencias del proyecto.
   Terminando esto debemos ejecutar el comando 'npm start' y ya tendriamos levantado el FrontEnd.
 
 ## Como usar
