@@ -1,0 +1,38 @@
+<div class="container-survey">
+  <form class="formgroup" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <div class="title">
+      <p>{{surveyText.title}}</p>
+    </div>
+    <div class="music">
+      <p>{{surveyText.subtitle1}}</p>
+      <mat-form-field class="example-full-width">
+        <mat-select formControlName="idTypeMusic">
+          <mat-option *ngFor="let music of musicList" [value]="music.idTypeMusic">{{music.musicName}}</mat-option>
+        </mat-select>
+        <mat-hint *ngIf="!formGroup.controls['idTypeMusic'].touched">
+          {{surveyText.infoMsj1}}
+        </mat-hint>
+        <mat-error *ngIf="!formGroup.controls['idTypeMusic'].valid">
+          {{surveyText.errorMsj1}}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="email">
+      <p>{{surveyText.subtitle2}}</p>
+        <mat-form-field class="example-full-width">
+          <mat-label>{{surveyText.labelEmail}}</mat-label>
+          <input type="email" matInput formControlName="email"
+                placeholder="Ej: pat@example.com">
+          <mat-hint *ngIf="!formGroup.controls['email'].touched">
+            {{surveyText.infoMsj2}}
+          </mat-hint>
+          <mat-error *ngIf="!formGroup.controls['email'].valid">
+            {{surveyText.errorMsj2}}
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="submit">
+        <button mat-raised-button tabindex="1" type="submit" [disabled]='formGroup.invalid'>Guardar</button>
+      </div>
+  </form>
+</div>

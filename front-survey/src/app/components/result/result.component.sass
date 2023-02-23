@@ -1,0 +1,38 @@
+.container-result
+  background-color: #ddb500
+  width: 100vw
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  .container-title
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    color: #ffffff
+    font-size: 50px
+    -webkit-text-stroke: 1px black
+    font-weight: 600
+    margin-bottom: 30px
+    .title
+      padding-right: 40px
+    .chart
+      padding-top: 40px
+  .table
+    display: flex
+    flex-direction: column
+    width: 70vw
+    height: auto
+    border: 1px solid #000
+
+::ng-deep th
+  background-color: #ff5757 !important
+
+::ng-deep tr:nth-child(even)
+  background-color: white !important
+
+::ng-deep tr:nth-child(odd)
+  background-color: #f7f7f7 !important
