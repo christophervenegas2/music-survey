@@ -12,11 +12,16 @@ Su base de datos es MySql.
 ### 1. Base de datos 
   
   Para configurar la base de datos se debe instalar MySql, asegurarse que el puerto 3306 este abierto para el despliegue de este.
-  La base de datos que vamos a crear debe llamarse 'db_test_survey' o poner el nombre que ustedes deseen pero cambiar esta parte del codigo en el backend:
+  La base de datos que vamos a crear debe llamarse 'db_test_survey' o poner el nombre que ustedes deseen pero cambiar esta variable en el backend:
   
   Ruta: Encuesta\back-survey\src\main\resources\application.properties
 
-  IMG
+  spring.datasource.url=jdbc:mysql://localhost/[NOMBRE DE SU BASE DE DATOS]?allowPublicKeyRetrieval=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
+  
+  En esta misma ruta podemos cambiar el usuario y contrasena de la base de datos:
+  
+  spring.datasource.username=root
+  spring.datasource.password=1234
 
 ### 2. BackEnd
 
